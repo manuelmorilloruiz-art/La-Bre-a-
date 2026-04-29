@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel & Restaurante La Breña | Los Caños de Meca</title>
+    <meta name="description" content="Descubre La Breña en Los Caños de Meca. Un hotel y restaurante exclusivo rodeado de naturaleza. Reserva tu escapada perfecta.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brena: '#2A4B41',
+                        arena: '#F3EFEA',
+                        oceano: '#1C2833',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-arena antialiased">
+
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <h1 class="font-serif text-2xl text-brena font-bold tracking-wider uppercase">La Breña</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#nosotros" class="text-gray-600 hover:text-brena transition">Nosotros</a>
+                    <a href="#alojamiento" class="text-gray-600 hover:text-brena transition">Alojamiento</a>
+                    <a href="#restaurante" class="text-gray-600 hover:text-brena transition">Restaurante</a>
+                    <a href="#experiencias" class="text-gray-600 hover:text-brena transition">Experiencias</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-brena transition">Contacto</a>
+                </nav>
+                <div class="hidden md:flex">
+                    <a href="#reservas" class="bg-brena text-white px-6 py-2 rounded hover:bg-opacity-90 transition">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80" alt="Mar y naturaleza" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-oceano/40"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+            <h2 class="font-serif text-5xl md:text-7xl text-white mb-6 leading-tight">Descubre la calma entre el mar y el bosque</h2>
+            <p class="text-lg md:text-2xl text-white/90 mb-10 font-light">Un refugio de exclusividad y naturaleza en Los Caños de Meca.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#reservas" class="bg-white text-brena px-8 py-3 rounded uppercase tracking-wider font-bold hover:bg-gray-100 transition">Reservar ahora</a>
+                <a href="#nosotros" class="border border-white text-white px-8 py-3 rounded uppercase tracking-wider hover:bg-white hover:text-brena transition">Descubrir más</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="reservas" class="relative z-20 -mt-16 max-w-5xl mx-auto px-4">
+        <div class="bg-white rounded-lg shadow-xl p-6 md:p-8 flex flex-col md:flex-row gap-4 items-end">
+            <div class="w-full md:w-1/3">
+                <label class="block text-sm text-gray-600 mb-2">Llegada - Salida</label>
+                <input type="date" class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-brena">
+            </div>
+            <div class="w-full md:w-1/3">
+                <label class="block text-sm text-gray-600 mb-2">Huéspedes</label>
+                <select class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-brena bg-transparent">
+                    <option>2 Adultos</option>
+                    <option>1 Adulto</option>
+                    <option>2 Adultos, 1 Niño</option>
+                </select>
+            </div>
+            <div class="w-full md:w-1/3">
+                <button class="w-full bg-brena text-white px-6 py-3 rounded hover:bg-opacity-90 transition font-bold tracking-wide">Comprobar Disponibilidad</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="nosotros" class="py-24 bg-arena">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h3 class="font-serif text-4xl text-brena mb-6">Nuestra Esencia</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Inspirados por la inmensidad del Atlántico y la paz de los pinares, "La Breña" nace como un santuario para los sentidos. Nuestra filosofía es simple: ofrecer un espacio de desconexión absoluta donde la naturaleza marca el ritmo.</p>
+                    <p class="text-gray-600 leading-relaxed">Cada detalle está diseñado para integrarse armónicamente con el Parque Natural, brindándote una experiencia de descanso y autenticidad sin igual.</p>
+                </div>
+                <div class="relative h-96">
+                    <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Detalle del pinar y la playa" class="w-full h-full object-cover rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="alojamiento" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="font-serif text-4xl text-brena mb-4">Habitaciones con Alma</h3>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-16">Espacios diseñados para el descanso profundo. Materiales naturales, luz cálida y la brisa del mar como banda sonora.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg mb-4 h-64">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Suite" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h4 class="font-serif text-2xl text-oceano mb-2">Suite La Breña</h4>
+                    <p class="text-sm text-gray-500 mb-4">Vistas panorámicas, terraza privada, cama king-size.</p>
+                    <a href="#reservas" class="text-brena font-bold hover:underline">Ver disponibilidad &rarr;</a>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg mb-4 h-64">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Doble Superior" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h4 class="font-serif text-2xl text-oceano mb-2">Doble Superior</h4>
+                    <p class="text-sm text-gray-500 mb-4">Amplia, luminosa y rodeada de la calma del pinar.</p>
+                    <a href="#reservas" class="text-brena font-bold hover:underline">Ver disponibilidad &rarr;</a>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg mb-4 h-64">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Doble Estándar" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h4 class="font-serif text-2xl text-oceano mb-2">Doble Estándar</h4>
+                    <p class="text-sm text-gray-500 mb-4">El refugio acogedor ideal tras un día de playa.</p>
+                    <a href="#reservas" class="text-brena font-bold hover:underline">Ver disponibilidad &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-oceano text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="font-serif text-2xl mb-4">La Breña</h4>
+                <p class="text-gray-400 text-sm">Tu refugio natural en Los Caños de Meca, Cádiz.</p>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4">Contacto</h5>
+                <p class="text-gray-400 text-sm">Av. Trafalgar s/n<br>Los Caños de Meca, 11159<br>+34 956 00 00 00<br>info@labrena.com</p>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4">Enlaces</h5>
+                <ul class="text-gray-400 text-sm space-y-2">
+                    <li><a href="#" class="hover:text-white transition">Aviso Legal</a></li>
+                    <li><a href="#" class="hover:text-white transition">Política de Privacidad</a></li>
+                    <li><a href="#" class="hover:text-white transition">Cookies</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4">Síguenos</h5>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-12 border-t border-gray-700 pt-8">
+            &copy; 2026 La Breña. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
